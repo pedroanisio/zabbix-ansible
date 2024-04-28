@@ -22,3 +22,16 @@ pve_cluster_2: #universe
     rog17:
       ansible_host: 10.0.0.77  
 
+debian_vms:
+  hosts:
+    srv-docker-node-0:
+      ansible_host: 10.10.10.37
+  hosts:
+    srv-docker-node-1:
+      ansible_host: 10.10.10.185
+  hosts:
+    srv-docker-node-0:
+      ansible_host: 10.10.10.39
+  hosts:
+    srv-docker-dmz:
+      ansible_host: 10.0.80.16      
