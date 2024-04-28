@@ -30,7 +30,7 @@ debian_vms:
     srv-docker-node-1:
       ansible_host: 10.10.10.185
   hosts:
-    srv-docker-node-0:
+    srv-docker-node-2:
       ansible_host: 10.10.10.39
   hosts:
     srv-docker-dmz:
