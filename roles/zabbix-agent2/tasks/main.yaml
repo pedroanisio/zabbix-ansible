@@ -22,6 +22,10 @@
       - zabbix-agent2
       - zabbix-agent2-plugin-*
     state: present
+    
+- name: Determine Zabbix Server IP
+  set_fact:
+    zabbix_server_ip: "{{ zabbix_server_ip_vm if (ansible_all_ipv4_addresses | select('match', '^10\\.10\\.10\\.') | list | length > 0) else zabbix_server_ip_hyprv }}"
 
 - name: Configure Zabbix Agent
   ansible.builtin.template:

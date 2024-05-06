@@ -1,0 +1,24 @@
+## Proxmox Hypervisor Clusters
+hypervisors:
+   hosts:
+    storage:
+      ansible_host: 10.0.0.17
+    beast:
+      ansible_host: 10.0.0.44
+    rog17:
+      ansible_host: 10.0.0.77
+    higgs:
+      ansible_host: 10.0.0.100
+    alone:
+      ansible_host: 10.0.0.135
+    pve1:
+      ansible_host: 10.0.0.192
+
+vms:
+  hosts:
+    srv-docker-main-2:
+      ansible_host: 10.10.10.9
+    srv-mongodb7:
+      ansible_host: 10.10.10.46
+    srv-docker-main-2:
+      ansible_host: 10.10.10.16      

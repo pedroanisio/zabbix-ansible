@@ -39,7 +39,7 @@ ansible-project/
 ## Commands
 
 ```shell
-ansible-playbook -i inventory/hosts.yaml playbooks/deploy_zabbix_agent2.yaml
+ansible-playbook -i inventories/hosts.yaml playbooks/deploy_zabbix_agent2.yaml
 ```
 
 ###  Fix role into playbooks
