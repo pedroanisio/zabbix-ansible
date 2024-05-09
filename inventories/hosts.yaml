@@ -14,11 +14,43 @@ hypervisors:
     pve1:
       ansible_host: 10.0.0.192
 
+probe:
+  hosts:
+    probe_ants:
+      ansible_host: 10.0.33.199
+    probe_dmz:
+      ansible_host: 10.0.80.199
+    probe_internet:
+      ansible_host: 10.0.99.199
+    probe_vm:
+      ansible_host: 10.10.10.199
+    probe_cam:
+      ansible_host: 192.168.5.199
+
+# Docker Installs
+dockers:
+  hosts:
+    srv-dkr-graylog:
+      ansible_host: 10.10.10.8
+    srv-docker-node-0:
+      ansible_host: 10.10.10.37      
+    srv-docker-node-2:
+      ansible_host: 10.10.10.39
+    srv-docker-node-1:
+      ansible_host: 10.10.10.185      
+
 vms:
   hosts:
     srv-docker-main-2:
       ansible_host: 10.10.10.9
-    srv-mongodb7:
-      ansible_host: 10.10.10.46
-    srv-docker-main-2:
-      ansible_host: 10.10.10.16      
+    srv-docker-dmz:
+      ansible_host: 10.10.10.16
+    srv-code:
+      ansible_host: 10.10.10.30
+
+# router:
+#   hosts:
+#     srv-router:
+#       ansible_host: 10.10.10.1
+# Uncoment only to updae journalbeat on the router
+# risks of disable ipv6 on uDM Pro
