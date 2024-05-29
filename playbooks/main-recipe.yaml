@@ -1,6 +1,6 @@
 ---
 - name: Deploy Zabbix Agent 2 to all hosts
-  hosts: all
+  hosts: srv-drk-virgulino
   become: yes
   roles:
     - zabbix-agent2
